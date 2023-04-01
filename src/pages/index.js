@@ -6,22 +6,22 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
-const links = [
+const links = [ 
   {
     text: "Tutorial",
     url: "https://www.gatsbyjs.com/docs/tutorial",
     description:
       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
+  }, 
+  { 
+    text: "Examples", 
     url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
     description:
       "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
   },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
+  { 
+    text: "Plugin Library", 
+    url: "https://www.gatsbyjs.com/plugins", 
     description:
       "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
   },
