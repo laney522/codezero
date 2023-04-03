@@ -17,6 +17,8 @@
 //   })
 // }
 
+const path = require('path');
+
 //Setup Import Alias
 exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
   const output = getConfig().output || {};
