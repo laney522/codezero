@@ -3,14 +3,14 @@ import { graphql } from 'gatsby'
 import styled from '@emotion/styled'
 import { Global, css } from '@emotion/react'
 
-const globalStyle = css`
+const globalStyle = css` 
   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
 
-    font-size: 20px;
-  }
+    font-size: 20px; 
+  } 
 `
 
 type InfoPageProps = {
