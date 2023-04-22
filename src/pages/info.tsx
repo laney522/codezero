@@ -17,10 +17,16 @@ const TextStyle = css`
   font-weight: 700;
   color: gray;
 `
+// Kebab Case 적용
 const Text1 = styled.div`
   font-size: 20px;
   font-weight: 700;
 `
+// Camel Case 적용
+const Text2 = styled('div')(() => ({
+  fontSize: '15px',
+  color: 'blue',
+}))
 
 type InfoPageProps = {
   data: {
@@ -46,7 +52,7 @@ const InfoPage: FunctionComponent<InfoPageProps> = function ({
       <Global styles={globalStyle} />
       <div css={TextStyle}>{title}</div>
       <Text1>{description}</Text1>
-      {author}
+      <Text2>{author}</Text2>
     </div>
   )
 }
