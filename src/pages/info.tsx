@@ -18,14 +18,17 @@ const TextStyle = css`
   color: gray;
 `
 // Kebab Case 적용
-const Text1 = styled.div`
+const Text1 = styled.div<{ disable: boolean }>`
   font-size: 20px;
   font-weight: 700;
+  text-decoration: ${({ disable }) => (disable ? 'line-through' : 'none')};
 `
+
 // Camel Case 적용
-const Text2 = styled('div')(() => ({
+const Text2 = styled('div')<{ disable: boolean }>(({ disable }) => ({
   fontSize: '15px',
   color: 'blue',
+  textDecoration: disable ? 'line-through' : 'none',
 }))
 
 type InfoPageProps = {
@@ -51,8 +54,8 @@ const InfoPage: FunctionComponent<InfoPageProps> = function ({
     <div>
       <Global styles={globalStyle} />
       <div css={TextStyle}>{title}</div>
-      <Text1>{description}</Text1>
-      <Text2>{author}</Text2>
+      <Text1 disable={true}>{description}</Text1>
+      <Text2 disable={true}>{author}</Text2>
     </div>
   )
 }
