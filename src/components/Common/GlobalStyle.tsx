@@ -16,5 +16,16 @@ const defaultStyle = css`
   #___gatsby {
     height: 100%;
   }
-    
+
+  a,
+  a:hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
 `
+const GlobalStyle: FunctionComponent = function () {
+  return <Global styles={defaultStyle} />
+}
+
+export default GlobalStyle
