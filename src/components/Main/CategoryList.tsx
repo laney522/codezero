@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import styled from '@emotion/styled'
+import { Link } from 'gatsby'
 
 export type CategoryListProps = {
   selectedCategory: string
@@ -14,6 +15,16 @@ const CategoryListWrapper = styled.div`
   flex-wrap: wrap;
   width: 768px;
   margin: 100px auto 0;
+`
+const CategoryItem = styled(Link)`
+  margin-right: 20px;
+  padding: 5px 0;
+  font-size: 18px;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 `
 
 const CategoryList: FunctionComponent<CategoryListProps> = function ({
