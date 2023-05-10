@@ -8,7 +8,7 @@ const POST_ITEM_DATA = {
   summary:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellat doloremque fugits rem temporibus! Maxime molestias, sumtrem debitis odit harum impedit. Modi cupiditate harum dignissimos eos in corrupti!',
   thumbnail:
-    '<https://ji5485.github.io/static/e4f34c>',
+    '<https://ji5485.github.io/static/e4f34c558ae8e8235>',
   link: '<https://www.google.co.kr/>',
 }
 
