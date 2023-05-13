@@ -19,7 +19,9 @@ const PostItemWrapper = styled(Link)`
   transition: 0.3s box-shadow;
   cursor: pointer;
 
-  
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
 `
 
 const PostItem: FunctionComponent<PostItemProps> = function ({
@@ -30,7 +32,7 @@ const PostItem: FunctionComponent<PostItemProps> = function ({
   thumbnail,
   link,
 }) {
-  return <div />
+  return <PostItemWrapper></PostItemWrapper>
 }
 
 export default PostItem
