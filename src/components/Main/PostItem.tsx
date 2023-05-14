@@ -23,6 +23,12 @@ const PostItemWrapper = styled(Link)`
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
 `
+const ThumbnailImage = styled.img`
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+`
 
 const PostItem: FunctionComponent<PostItemProps> = function ({
   title,
