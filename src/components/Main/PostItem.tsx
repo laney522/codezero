@@ -29,6 +29,12 @@ const ThumbnailImage = styled.img`
   border-radius: 10px 10px 0 0;
   object-fit: cover;
 `
+const PostItemContent = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+`
 
 const PostItem: FunctionComponent<PostItemProps> = function ({
   title,
@@ -38,7 +44,13 @@ const PostItem: FunctionComponent<PostItemProps> = function ({
   thumbnail,
   link,
 }) {
-  return <PostItemWrapper></PostItemWrapper>
+  return (
+    <PostItemWrapper>
+      <ThumbnailImage src={thumbnail} alt="Post Item Image" />
+
+      <PostItemContent></PostItemContent>
+    </PostItemWrapper>
+  )
 }
 
 export default PostItem
