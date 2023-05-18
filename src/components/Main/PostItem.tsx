@@ -96,11 +96,11 @@ const PostItem: FunctionComponent<PostItemProps> = function ({
     <PostItemWrapper to={link}> 
       <ThumbnailImage src={thumbnail} alt="Post Item Image" /> 
 
-      <PostItemContent> 
-        <Title>{title}</Title> 
-        <Date>{date}</Date> 
-        <Category> 
-          {categories.map(category => ( 
+      <PostItemContent>  
+        <Title>{title}</Title>  
+        <Date>{date}</Date>  
+        <Category>  
+          {categories.map(category => (  
             <CategoryItem key={category}>{category}</CategoryItem> 
           ))} 
         </Category> 
