@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
       alignItems: `center`,
       justifyContent: `space-between`,
     }}
-  >
+  > 
     <Link
       to="/"
       style={{
