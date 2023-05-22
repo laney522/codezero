@@ -25,10 +25,10 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     // add from medium
-    "strict": true,
-    "moduleResolution": "node",
-    "noImplicitAny": true,
-    "experimentalDecorators": true,
+    "strict": true, 
+    "moduleResolution": "node", 
+    "noImplicitAny": true, 
+    "experimentalDecorators": true, 
     "outDir": "$$ts-jest$$"
   },
   "include": [
