@@ -7,21 +7,21 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-typescript',
-      options: {
-        isTSX: true,
-        allExtentions: true,
+      resolve: 'gatsby-plugin-typescript', 
+      options: { 
+        isTSX: true, 
+        allExtentions: true, 
       },
     },
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `contents`,
-        path: `${__dirname}/contents`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `contents`,
+    //     path: `${__dirname}/contents`, 
+    //   }, 
+    // },
+    `gatsby-transformer-sharp`, 
+    `gatsby-plugin-sharp`, 
   ],
 }; 
