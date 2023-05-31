@@ -17,11 +17,11 @@ module.exports = {
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
-    //     name: `contents`,
-    //     path: `${__dirname}/contents`, 
+    //     name: `contents`,   
+    //     path: `${__dirname}/contents`,    
     //   }, 
     // },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,  
+    `gatsby-plugin-sharp`,  
   ],
 }; 
