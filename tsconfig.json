@@ -32,18 +32,9 @@
     "outDir": "$$ts-jest$$"
   },
   "include": [
-    "src/**/*.tsx",
-    // 👇️ add all the directories and files
-    // that you want to lint here
-    "src",
-    "tests",
-    // add all files in which you see
-    // the "parserOptions.project" error
-    ".eslintrc.json"
+    "src/**/*.tsx"
   ],
   "exclude": [
-    "node_modules",
-    "public",
-    "dist"
+    "node_modules"
   ]
 }
