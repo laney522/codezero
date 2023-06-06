@@ -8,9 +8,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "baseUrl": "./src",
-    "paths": {
-      "components/*": [
+    "baseUrl": "./src", 
+    "paths": { 
+      "components/*": [ 
         "./components/*"
       ],
       "utils/*": [
