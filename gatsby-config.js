@@ -19,9 +19,9 @@ module.exports = {
     //   options: {
     //     name: `contents`,   
     //     path: `${__dirname}/contents`,    
-    //   }, 
+    //   },  
     // },
-    `gatsby-transformer-sharp`,  
-    `gatsby-plugin-sharp`,  
-  ],
+    `gatsby-transformer-sharp`,     
+    `gatsby-plugin-sharp`,    
+  ],  
 }; 
