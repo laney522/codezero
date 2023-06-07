@@ -8,9 +8,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "baseUrl": "./src", 
-    "paths": { 
-      "components/*": [ 
+    "baseUrl": "./src",
+    "paths": {
+      "components/*": [
         "./components/*"
       ],
       "utils/*": [
@@ -23,13 +23,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    // add from medium
-    "strict": true, 
-    "moduleResolution": "node", 
-    "noImplicitAny": true, 
-    "experimentalDecorators": true, 
-    "outDir": "$$ts-jest$$"
+    "resolveJsonModule": true
   },
   "include": [
     "src/**/*.tsx"
