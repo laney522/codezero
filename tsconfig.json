@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "./built",
     "target": "es5",
     "module": "commonjs",
     "allowJs": true,
@@ -29,6 +30,9 @@
     "src/**/*.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "./plugins/**/*",
+    "./typings/**/*",
+    "./built/**/*"
   ]
 }
