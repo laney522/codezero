@@ -30,9 +30,9 @@
     "src/**/*.tsx"
   ],
   "exclude": [
-    "node_modules",
-    "./plugins/**/*",
-    "./typings/**/*",
+    "node_modules", 
+    "./plugins/**/*", 
+    "./typings/**/*", 
     "./built/**/*"
-  ]
-}
+  ]  
+}  
