@@ -34,10 +34,10 @@ const Text2 = styled('div')<{ disable: boolean }>(({ disable }) => ({
 type InfoPageProps = {
   data: {
     site: {
-      siteMetadata: {
-        title: string
-        description: string
-        author: string
+      siteMetadata: { 
+        title: string 
+        description: string 
+        author: string 
       }
     }
   }
