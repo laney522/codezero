@@ -30,16 +30,16 @@ const Title = styled.div`
 
 const Introduction: FunctionComponent = function () {
   return (
-    <Background>
-      <Wrapper>
-        <ProfileImage />
+    <Background> 
+      <Wrapper> 
+        <ProfileImage /> 
 
-        <div>
-          <SubTitle>Nice to Meet You,</SubTitle>
-          <Title>I'm Junior Frontend Developer Young</Title>
-        </div>
-      </Wrapper>
-    </Background>
+        <div> 
+          <SubTitle>Nice to Meet You,</SubTitle> 
+          <Title>I'm Junior Frontend Developer Young</Title> 
+        </div> 
+      </Wrapper> 
+    </Background> 
   )
 }
 

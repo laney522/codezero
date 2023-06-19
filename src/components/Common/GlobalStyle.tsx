@@ -7,25 +7,25 @@ const defaultStyle = css`
   * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: 'Nanum Myeongjo', serif;
+    box-sizing: border-box; 
+    font-family: 'Nanum Myeongjo', serif; 
   }
   
-  html,
-  body,
-  #___gatsby {
-    height: 100%;
+  html, 
+  body, 
+  #___gatsby { 
+    height: 100%; 
   }
 
   a,
-  a:hover {
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
+  a:hover { 
+    color: inherit; 
+    text-decoration: none; 
+    cursor: pointer; 
   }
 `
-const GlobalStyle: FunctionComponent = function () {
-  return <Global styles={defaultStyle} />
-}
+const GlobalStyle: FunctionComponent = function () { 
+  return <Global styles={defaultStyle} /> 
+} 
 
 export default GlobalStyle
