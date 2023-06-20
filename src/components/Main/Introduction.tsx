@@ -35,7 +35,7 @@ const Introduction: FunctionComponent = function () {
         <ProfileImage /> 
 
         <div> 
-          <SubTitle>Nice to Meet You,</SubTitle> 
+          <SubTitle>Great to see you</SubTitle> 
           <Title>I'm Junior Frontend Developer Young</Title> 
         </div> 
       </Wrapper> 
