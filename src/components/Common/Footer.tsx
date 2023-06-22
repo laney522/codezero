@@ -10,14 +10,14 @@ const FooterWrapper = styled.div`
   text-align: center;
   line-height: 1.5;
 `
-
+ 
 const Footer: FunctionComponent = function () {
-  return (
-    <FooterWrapper>
+  return ( 
+    <FooterWrapper> 
       Thank You for Visiting My Blog, Have a Good Day
       <br /> 2021 Developer Young, Powered By Gatsby.
-    </FooterWrapper>
-  )
-}
+    </FooterWrapper> 
+  ) 
+} 
 
 export default Footer
