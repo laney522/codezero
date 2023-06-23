@@ -2,11 +2,11 @@ import React, { FunctionComponent, ReactNode } from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 
-type CategoryItemProps = {
+type CategoryItemProps = { 
   active: boolean;
 }
 
-type GatsbyLinkProps = {
+type GatsbyLinkProps = { 
   children: ReactNode;
   className?: string;
   to: string;
