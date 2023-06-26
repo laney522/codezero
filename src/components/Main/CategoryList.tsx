@@ -21,14 +21,14 @@ export type CategoryListProps = {
 } 
 
 const CategoryListWrapper = styled.div`
-  display: flex; 
-  flex-wrap: wrap; 
-  width: 768px; 
-  margin: 100px auto 0; 
+  display: flex;  
+  flex-wrap: wrap;  
+  width: 768px;  
+  margin: 100px auto 0;  
 `
 
 // eslint-disable-next-line @typesript-eslint/no-unused-vars
-const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
+const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => ( 
   <Link {...props} />
 )) <CategoryItemProps>`
   margin-right: 20px;
