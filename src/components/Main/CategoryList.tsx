@@ -17,8 +17,8 @@ export type CategoryListProps = {
   categoryList: { 
     // 프로퍼티 이름은 문자열, 프로퍼티 값은 숫자입을 나타내는 타입 표기 방법
     [key: string]: number
-  } 
-} 
+  }  
+}  
 
 const CategoryListWrapper = styled.div`
   display: flex;  
@@ -29,11 +29,11 @@ const CategoryListWrapper = styled.div`
 
 // eslint-disable-next-line @typesript-eslint/no-unused-vars
 const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => ( 
-  <Link {...props} />
+  <Link {...props} /> 
 )) <CategoryItemProps>`
-  margin-right: 20px;
-  padding: 5px 0;
-  font-size: 18px;
+  margin-right: 20px; 
+  padding: 5px 0; 
+  font-size: 18px; 
   font-weight: ${({ active }) => (active ? '800' : '400')};
   cursor: pointer;
 
