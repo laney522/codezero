@@ -56,7 +56,7 @@ const CategoryList: FunctionComponent<CategoryListProps> = function ({
         >
           #{name}({count})
         </CategoryItem>
-      ))}
+      ))} 
     </CategoryListWrapper>
   )
 }
