@@ -44,9 +44,9 @@ const Title = styled.div`
 
 const Introduction: FunctionComponent = function () {
   return (
-    <Background>
-      <Wrapper>
-        <ProfileImage />
+    <Background> 
+      <Wrapper> 
+        <ProfileImage /> 
 
         <div>
           <SubTitle>Great to see you</SubTitle>
