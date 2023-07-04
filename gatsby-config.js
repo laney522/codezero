@@ -53,10 +53,10 @@ module.exports = {
             options: {},
           },
           {
-            resolve: 'gatsby-remark-external-links',
+            resolve: 'gatsby-remark-external-links', 
             options: {
-              target: '_blank',
-              rel: 'nofollow', 
+              target: '_blank', 
+              rel: 'nofollow',  
             }
           }
         ],
