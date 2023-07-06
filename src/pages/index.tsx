@@ -7,6 +7,29 @@ import Introduction from '../components/Main/Introduction'
 import PostList from '../components/Main/PostList'
 import { graphql } from 'gatsby'
 
+type IndexPageProps = {
+  data: {
+    allMarkdownRemark: {
+      edges: [
+        {
+          node: {
+            id: string
+            frontmatter: {
+              title: string
+              summary: string
+              date: string
+              categories: string[]
+              thumbnail: {
+                publicURL: string
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+
 const CATEGORY_LIST = {
   All: 5,
   Web: 3,
@@ -19,7 +42,7 @@ const Container = styled.div`
   height: 100%;   
 `
 
-const IndexPage: FunctionComponent = function ({
+const IndexPage: FunctionComponent<IndexPageProps> = function ({
   data: {
     allMarkdownRemark: { edges },
   },
