@@ -24,7 +24,7 @@ type IndexPageProps = {
               }
             }
           }
-        }
+        },
       ]
     }
   }
@@ -37,14 +37,14 @@ const CATEGORY_LIST = {
 }
 
 const Container = styled.div` 
-  display: flex;  
-  flex-direction: column;  
-  height: 100%;   
+  display: flex;    
+  flex-direction: column;    
+  height: 100%;     
 `
 
 const IndexPage: FunctionComponent<IndexPageProps> = function ({
   data: {
-    allMarkdownRemark: { edges },
+    allMarkdownRemark: { edges  },
   },
 }) {
   return (
