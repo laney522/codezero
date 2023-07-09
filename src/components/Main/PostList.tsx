@@ -48,7 +48,7 @@ const PostListWrapper = styled.div`
   }
 `
 
-const PostList: FunctionComponent = function () {
+const PostList: FunctionComponent<PostListProps> = function () {
   return <PostListWrapper></PostListWrapper>;
 }
 
