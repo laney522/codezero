@@ -4,28 +4,13 @@ import GlobalStyle from '../components/Common/GlobalStyle'
 import Footer from '../components/Common/Footer'
 import CategoryList from '../components/Main/CategoryList'
 import Introduction from '../components/Main/Introduction'
-import PostList from '../components/Main/PostList'
+import PostList, { PostType } from '../components/Main/PostList'
 import { graphql } from 'gatsby'
 
 type IndexPageProps = {
   data: {
     allMarkdownRemark: {
-      edges: [
-        {
-          node: {
-            id: string
-            frontmatter: {
-              title: string
-              summary: string
-              date: string
-              categories: string[]
-              thumbnail: {
-                publicURL: string
-              }
-            }
-          }
-        },
-      ]
+      edges: PostType[]
     }
   }
 }
@@ -44,7 +29,7 @@ const Container = styled.div`
 
 const IndexPage: FunctionComponent<IndexPageProps> = function ({
   data: {
-    allMarkdownRemark: { edges  },
+    allMarkdownRemark: { edges },
   },
 }) {
   return (
@@ -52,7 +37,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
       <GlobalStyle />
       <Introduction />
       <CategoryList selectedCategory='Web' categoryList={CATEGORY_LIST} />
-      <PostList />
+      <PostList posts={edges} />
       <Footer />
     </Container>
   )
@@ -74,9 +59,7 @@ export const getPostList = graphql`
             summary
             date(formatString: "YYYY.MM.DD.")
             categories
-            thumbnail {
-              publicURL
-            }
+            thumbnail
           }
         }
       }
