@@ -47,7 +47,7 @@ const PostListWrapper = styled.div`
     padding: 50px 20px;
   }
 `
-
+  
 const PostList: FunctionComponent<PostListProps> = function () {
   return <PostListWrapper></PostListWrapper>;
 }
