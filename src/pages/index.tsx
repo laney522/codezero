@@ -47,7 +47,7 @@ export const getPostList = graphql`
             summary
             date(formatString: "YYYY.MM.DD.")
             categories
-            thumbnail
+            thumbnail  
           }
         }
       }
