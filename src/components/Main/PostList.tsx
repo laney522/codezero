@@ -29,9 +29,9 @@ export type PostType = {
   }
 }
 
-type PostListProps = {
-  posts: PostType[]
-}
+// type PostListProps = {
+//   posts: PostType[]
+// }
 
 const PostListWrapper = styled.div`
   display: grid;
@@ -46,9 +46,9 @@ const PostListWrapper = styled.div`
     width: 100%;
     padding: 50px 20px;
   }
-`  
-    
-const PostList: FunctionComponent<PostListProps> = function () {
+`
+
+const PostList: FunctionComponent = function () {
   return <PostListWrapper></PostListWrapper>;
 }
 
