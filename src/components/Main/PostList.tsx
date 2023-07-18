@@ -48,4 +48,4 @@ const PostList: FunctionComponent = function () {
   return <PostListWrapper></PostListWrapper>;
 }
 
-export default PostList
+export default PostList 
