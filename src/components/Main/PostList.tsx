@@ -38,9 +38,9 @@ const PostListWrapper = styled.div`
   padding: 50px 0 100px;
 
   @media (max-width: 768px) {
-    grid-template-colums: 1fr;
-    width: 100%;
-    padding: 50px 20px;
+    grid-template-colums: 1fr; 
+    width: 100%; 
+    padding: 50px 20px; 
   }
 `
 
@@ -49,3 +49,4 @@ const PostList: FunctionComponent = function () {
 }
 
 export default PostList 
+ 
