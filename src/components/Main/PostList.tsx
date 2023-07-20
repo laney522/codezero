@@ -29,6 +29,10 @@ export type PostType = {
   }
 }
 
+type PostListProps = {
+  posts: PostType[]
+}
+
 const PostListWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -44,9 +48,22 @@ const PostListWrapper = styled.div`
   }
 `
 
-const PostList: FunctionComponent = function () {
-  return <PostListWrapper></PostListWrapper>;
+const PostList: FunctionComponent<PostListProps> = function ({ posts }) {
+  return (
+    <PostListWrapper>
+      {posts.map(
+        ({
+          node: { id, frontmatter },
+        }: PostType) => (
+          <PostItem
+            {...frontmatter}
+            link="https://www.google.co.kr/"
+            key={id}
+          />
+        ),
+      )}
+    </PostListWrapper>
+  )
 }
 
-export default PostList 
- 
+export default PostList

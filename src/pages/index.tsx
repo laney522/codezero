@@ -10,22 +10,7 @@ import { graphql } from 'gatsby'
 type IndexPageProps = {
   data: {
     allMarkdownRemark: {
-      edges: [
-        {
-          node: {
-            id: string
-            frontmatter: {
-              title: string
-              summary: string
-              date: string
-              catagories: string[]
-              thumbnail: {
-                publicURL: string
-              }
-            }
-          }
-        },
-      ]
+      edges: PostType[]
     }
   }
 }
@@ -52,7 +37,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
       <GlobalStyle />
       <Introduction />
       <CategoryList selectedCategory='Web' categoryList={CATEGORY_LIST} />
-      <PostList />
+      <PostList posts={edges} />
       <Footer />
     </Container>
   )
