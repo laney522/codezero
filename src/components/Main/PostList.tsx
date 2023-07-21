@@ -1,19 +1,12 @@
 import React, { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
 import PostItem from './PostItem';
+import { PostListItemType } from 'types/PostItem.types';
 
-/*
-const POST_ITEM_DATA = {
-  title: 'Post Item Title',
-  date: '2020.01.29',
-  categories: ['Web', 'Frontend', 'Testing'],
-  summary:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellat doloremque fugits rem temporibus! Maxime molestias, sumtrem debitis odit harum impedit. Modi cupiditate harum dignissimos eos in corrupti!',
-  thumbnail:
-    'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
-  link: '<https://www.google.co.kr/>',
+
+type PostListProps = {
+  posts: PostListItemType[]
 }
-*/
 
 export type PostType = {
   node: {
@@ -27,10 +20,6 @@ export type PostType = {
       }
     }
   }
-}
-
-type PostListProps = {
-  posts: PostType[]
 }
 
 const PostListWrapper = styled.div`
