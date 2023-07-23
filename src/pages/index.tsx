@@ -18,9 +18,9 @@ type IndexPageProps = {
 }
 
 const CATEGORY_LIST = {
-  All: 5,
-  Web: 3,
-  Mobile: 2,
+  All: 5, 
+  Web: 3, 
+  Mobile: 2, 
 }
 
 const Container = styled.div` 
