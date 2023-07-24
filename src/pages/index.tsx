@@ -11,11 +11,11 @@ import { PostListItemType } from '../types/PostItem.types';
 
 type IndexPageProps = {
   data: {
-    allMarkdownRemark: {
+    allMarkdownRemark: { 
       edges: PostListItemType[]
-    }
-  }
-}
+    } 
+  } 
+} 
 
 const CATEGORY_LIST = {
   All: 5, 
