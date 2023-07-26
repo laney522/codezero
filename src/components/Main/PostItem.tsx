@@ -79,11 +79,11 @@ const Summary = styled.div`
 `
 
 const PostItem: FunctionComponent<PostItemProps> = function ({
-  title,
-  date,
-  categories,
-  summary,
-  thumbnail: {
+  title, 
+  date, 
+  categories, 
+  summary, 
+  thumbnail: { 
     childImageSharp: { gatsbyImageData },
   },
   link,
