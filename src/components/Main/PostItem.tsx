@@ -79,11 +79,11 @@ const Summary = styled.div`
 `
 
 const PostItem: FunctionComponent<PostItemProps> = function ({
-  title, 
-  date, 
-  categories, 
-  summary, 
-  thumbnail: { 
+  title,
+  date,
+  categories,
+  summary,
+  thumbnail: {
     childImageSharp: { gatsbyImageData },
   },
   link,
@@ -96,8 +96,8 @@ const PostItem: FunctionComponent<PostItemProps> = function ({
         <Title>{title}</Title>
         <Date>{date}</Date>
         <Category>
-          {categories.map(category => (
-            <CategoryItem key={category}>{category}</CategoryItem>
+          {categories.map(item => (
+            <CategoryItem key={item}>{item}</CategoryItem>
           ))}
         </Category>
         <Summary>{summary}</Summary>
