@@ -31,7 +31,7 @@ const Container = styled.div`
 
 const IndexPage: FunctionComponent<IndexPageProps> = function ({
   data: {
-    allMarkdownRemark: { edges },
+    allMarkdownRemark: { edges }, 
   },
 }) {
   return (
