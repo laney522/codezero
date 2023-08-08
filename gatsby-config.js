@@ -6,6 +6,7 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+
     {
       resolve: 'gatsby-plugin-typescript',
       options: {
