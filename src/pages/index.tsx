@@ -10,8 +10,8 @@ import { PostListItemType } from '../types/PostItem.types';
 import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 
-type IndexPageProps = {
-  data: {
+type IndexPageProps = { 
+  data:{
     allMarkdownRemark: {
       edges: PostListItemType[]
     }
