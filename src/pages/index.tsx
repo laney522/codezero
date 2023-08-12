@@ -10,8 +10,11 @@ import { PostListItemType } from '../types/PostItem.types';
 import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 
-type IndexPageProps = { 
-  data:{
+type IndexPageProps = {
+  location: {
+    search: string
+  }
+  data: {
     allMarkdownRemark: {
       edges: PostListItemType[]
     }
@@ -36,6 +39,7 @@ const Container = styled.div`
 `
 
 const IndexPage: FunctionComponent<IndexPageProps> = function ({
+  location: { search },
   data: {
     allMarkdownRemark: { edges },
     file: {
