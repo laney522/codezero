@@ -56,10 +56,10 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
   return (
     <Container>
       <GlobalStyle />
-      <Introduction profileImage={gatsbyImageData} />
+      <Introduction profileImage={gatsbyImageData}  />
       <CategoryList 
-        selectedCategory={selectedCategory} 
-        categoryList={CATEGORY_LIST} 
+        selectedCategory={selectedCategory}   
+        categoryList={CATEGORY_LIST}   
       />
       <PostList posts={edges} />
       <Footer />
