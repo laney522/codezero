@@ -51,7 +51,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
   const selectedCategory: string = 
     typeof parsed.category !== 'string' || !parsed.category
       ? 'All'
-      : parsed.category
+      : parsed.category 
 
   return (
     <Container>
